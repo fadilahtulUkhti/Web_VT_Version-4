@@ -13,29 +13,39 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="Poltek Logo.png" >
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li class="link"><a href="https://forms.gle/Dkm9R4govtZgytCo9">Feedback</a></li>
-            <li class="link"><a href="https://www.poliupg.ac.id/">Official Website</a></li>
-        </ul>
-    </nav>
-
-</nav>
     
-    <div class="main-container">
-        <div class="image-container"></div> 
-    <div id="text"><h1 data-aos="fade-up" data-aos-duration="1500"data-aos-delay="700">Teknik Multimedia dan Jaringan</h1>
-        <p class="small" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="700">- Teknik Informatika dan Komputer, Politeknik Negeri Ujung Pandang -</p>
-        <a href="vt_link/index.htm">
-            <button class="start" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="700">Start Virtual Tour</button>
-          </a></div>
-    </div>
+<div class="layar-penuh">
+    <header id="home">
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="Poltek Logo.png" >
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li class="link"><a href="https://forms.gle/Dkm9R4govtZgytCo9">Feedback</a></li>
+                <li class="link"><a href="https://www.poliupg.ac.id/">Official Website</a></li>
+                <li class="link"><a href="https://www.poliupg.ac.id/">Blog</a></li>
+                <li class="link"><a href="https://www.poliupg.ac.id/">Contact</a></li>
+            </ul>
+        </nav>
 
+    </nav>
+      <div class="overlay"></div>
+      <video autoplay muted loop width="1520" height="750" controls>
+        <source src="videodrone2.mp4" type="video/mp4"/>
+      </video>
+      <div class="intro">
+        <h3>Selamat Datang di Virtual Tour</h3>
+        <p>
+          Teknik Multimedia dan Jaringan, Politeknik Negeri Ujung Pandang
+        </p>
+        <p>
+          <a href="vt_link/index.htm" class="tombol">Start Virtual Tour</a>
+        </p>
+      </div>
+    </header>
+    
 <div class="about">
     <iframe src='https://my.spline.design/tmj-98464ce6cf67cd65ee18834000d39cae/' frameborder='0' width='700' height='500' data-aos="fade-up" data-aos-duration="1200"data-aos-delay="700"></iframe>
     <div class="info">
@@ -218,7 +228,11 @@
     </div>
 
 </footer>
-
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"
+></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"
         integrity="sha512-uWKImujbh9CwNa8Eey5s8vlHDB4o1HhrVszkympkm5ciYTnUEQv3t4QHU02CUqPtdKTg62FsHo12x63q6u0wmg=="
@@ -226,7 +240,7 @@
         referrerpolicy="no-referrer"
     ></script>
     <script src="js/panolens.min.js"></script>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
     <script>
         AOS.init();
     </script>

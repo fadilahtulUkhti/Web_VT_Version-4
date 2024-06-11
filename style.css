@@ -8,7 +8,7 @@
 
 
 body{
-    background-color: #2e343d;
+    background-color: #141415;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -18,7 +18,6 @@ body{
 img{
     width: 100%;
     display: flex;
-    
 }
 
 a{
@@ -27,22 +26,18 @@ a{
 }
 
 nav{
-    max-width: 1800px;
-    max-height: 1000;
-    margin: auto;
-    padding: 1rem 14rem;
+    padding: 2rem 14rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
     color: #fbfdff;
     position: relative;
-    background-color: #212529; /* Set the background color of the rectangle */
+    z-index: 1;
 }
 
-
 .nav-logo{
-    max-width: 40px;
+    max-width: 50px;
 }
 
 .nav-links{
@@ -50,28 +45,73 @@ nav{
     display: flex;
     align-items: center;
     gap: 3rem;
-    font-size: 15px;
-   
+    font-size: 16px; 
 }
 
-.main-container {
-  display: flex;
-  height: 60vh;
-  align-items: center;
-  justify-content: center;
-  background: #11111100;
-  
-}
-
-.main-container .image-container {
-  /* flex: 1; */
- 
-  height: 50%;
-  padding-bottom: 56.25%;
-  position:relative;
+header {
+  position: relative;
+  height: 100vh;
   width: 100%;
-  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+header .intro {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+header .intro h3 {
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+header .intro p {
+  font-size: 20px;
+}
+.tombol {
+  background-color: #8ba1d1;
+  margin-top: 2vh;
+  height: 40px;
+  line-height: 42px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0px 20px 0px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 55%;
   z-index: -1;
+}
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
 }
 
 
@@ -182,10 +222,9 @@ nav{
     max-width: 1200px;
     min-height: 100vh;
     margin: auto;
-    padding: 8rem 1rem;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+   
   }
   
   .about img{
@@ -250,7 +289,7 @@ nav{
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 1rem;
+    padding: 15rem 1rem;
 
 }
 
@@ -309,7 +348,7 @@ nav{
 .prospective{
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 50px;
   color: #ffffff;
 }
 
@@ -349,7 +388,7 @@ nav{
     max-width: 1200px;
     margin: auto;
     padding: 80px 50px 40px;
-    margin-top: 100px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
